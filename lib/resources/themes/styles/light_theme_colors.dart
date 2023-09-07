@@ -12,24 +12,24 @@ class LightThemeColors implements ColorStyles {
   Color get background => const Color(0xFFFFFFFF);
 
   Color get primaryContent => const Color(0xFF000000);
-  Color get primaryAccent => const Color(0xFF0045a0);
+  Color get primaryAccent => Color.fromRGBO(209, 77, 114, 1);
 
   Color get surfaceBackground => Colors.white;
   Color get surfaceContent => Colors.black;
 
   // app bar
-  Color get appBarBackground => Colors.blue;
-  Color get appBarPrimaryContent => Colors.white;
+  Color get appBarBackground => const Color(0xFFFFFFFF);
+  Color get appBarPrimaryContent => Colors.black;
 
   // buttons
-  Color get buttonBackground => Colors.blueAccent;
+  Color get buttonBackground => Color.fromARGB(255, 58, 79, 122);
   Color get buttonPrimaryContent => Colors.white;
 
   // bottom tab bar
   Color get bottomTabBarBackground => Colors.white;
 
   // bottom tab bar - icons
-  Color get bottomTabBarIconSelected => Colors.blue;
+  Color get bottomTabBarIconSelected => Color.fromARGB(255, 233, 142, 173);
   Color get bottomTabBarIconUnselected => Colors.black54;
 
   // bottom tab bar - label

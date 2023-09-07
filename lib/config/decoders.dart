@@ -1,3 +1,5 @@
+import '/app/models/product_category.dart';
+import '/app/models/header.dart';
 import 'package:flutter_app/app/models/user.dart';
 import 'package:flutter_app/app/networking/dio/base_api_service.dart';
 import '/app/networking/api_service.dart';
@@ -19,6 +21,14 @@ final Map<Type, dynamic> modelDecoders = {
   User: (data) => User.fromJson(data),
 
   // User: (data) => User.fromJson(data),
+
+  List<Header>: (data) => List.from(data).map((json) => Header.fromJson(json)).toList(),
+
+  Header: (data) => Header.fromJson(data),
+
+  List<ProductCategory>: (data) => List.from(data).map((json) => ProductCategory.fromJson(json)).toList(),
+
+  ProductCategory: (data) => ProductCategory.fromJson(data),
 };
 
 /*
